@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*:before, *::after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+a {
+    text-decoration: none;
+    color: #000 ;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+/* Header y Navegación */
+
+.contenedor-navegacion {
+    border-top: 1px #e1e1e1 solid;
+}
+
+.nombre_sitio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.nombre_sitio span {
+    color: #037bc0;
+}
+
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.hero {
+    background-image: url('../img/principal.jpg');
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Categorias */
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    background-color: red;
+}
